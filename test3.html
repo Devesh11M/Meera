@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px;
+            margin: 0;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎵 My YouTube Playlist</h1>
+
+    <div class="video-container">
+        <!-- Replace PLAYLIST_ID with your actual playlist ID -->
+        <iframe 
+            src="https://www.youtube.com/embed/videosseries?list=PLYazKoZJJto_fOBHijYa1fWwZK7l0SVy5" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
